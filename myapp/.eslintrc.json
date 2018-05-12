@@ -12,6 +12,7 @@
         "sourceType": "module"
     },
     "plugins": [
+        "babel",
         "react"
     ],
     "rules": {
