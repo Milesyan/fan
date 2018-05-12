@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React from "react";
 
-import { Query } from 'react-apollo';
-import gql from 'graphql-tag';
+import { Query } from "react-apollo";
+import gql from "graphql-tag";
 
 export const ExchangeRates = () => (
   <Query
@@ -15,13 +15,13 @@ export const ExchangeRates = () => (
     `}
   >
     {({ loading, error, data }) => {
-      if (loading) return <p>Loading...</p>
-      if (error) return <p>Errror :(</p>
+      if (loading) return <p>Loading...</p>;
+      if (error) return <p>Errror :(</p>;
       return data.rates.map(({ currency, rate }) => (
         <div key={currency}>
           <p>{`${currency}: ${rate}`}</p>
         </div>
-      ))
+      ));
     }}
   </Query>
 );

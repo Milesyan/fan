@@ -1,14 +1,13 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
-import ApolloClient from 'apollo-boost';
-import gql from 'graphql-tag';
-import { ApolloProvider } from 'react-apollo';
-import { ExchangeRates } from './components/ExchangeRates'
+import React, { Component } from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import ApolloClient from "apollo-boost";
+import { ApolloProvider } from "react-apollo";
+import { ExchangeRates } from "./components/ExchangeRates";
 
 const client = new ApolloClient({
   uri: "https://w5xlvm3vzz.lp.gql.zone/graphql"
-})
+});
 class App extends Component {
   render() {
     return (
