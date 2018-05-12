@@ -1,3 +1,5 @@
+// @flow
+
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
@@ -16,7 +18,7 @@ import store, { history } from './store';
 const client = new ApolloClient({
   uri: 'https://w5xlvm3vzz.lp.gql.zone/graphql'
 });
-class App extends Component {
+class App extends Component<*, *> {
   render() {
     return (
       <ApolloProvider client={client}>

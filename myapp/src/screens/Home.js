@@ -1,3 +1,4 @@
+// @flow
 import React from 'react';
 import { push } from 'react-router-redux';
 import { bindActionCreators } from 'redux';
@@ -25,7 +26,7 @@ const Home = props => (
       <button onClick={props.decrement} disabled={props.isDecrementing}>Decrementing</button>
       <button onClick={props.decrementAsync} disabled={props.isDecrementing}>Decrement Async</button>
     </p>
-    <Button variant="raised" color="primary">
+    <Button color="primary" variant="raised">
       Hello World
     </Button>
   </div>
