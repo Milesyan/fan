@@ -1,0 +1,9 @@
+{
+  "name": "fan",
+  "version": "1.0.0",
+  "description": "Project Fan",
+  "main": "index.js",
+  "repository": "git@github.com:Milesyan/fan.git",
+  "author": "miles <miles@glowing.com>",
+  "license": "MIT"
+}
