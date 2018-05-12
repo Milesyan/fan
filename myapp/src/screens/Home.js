@@ -8,6 +8,8 @@ import {
   decrement,
   decrementAsync
 } from '../reducers/counter';
+
+import Button from 'material-ui/Button'
 const Home = props => (
   <div>
     <h1>Home</h1>
@@ -23,6 +25,9 @@ const Home = props => (
       <button onClick={props.decrement} disabled={props.isDecrementing}>Decrementing</button>
       <button onClick={props.decrementAsync} disabled={props.isDecrementing}>Decrement Async</button>
     </p>
+    <Button variant="raised" color="primary">
+      Hello World
+    </Button>
   </div>
 )
 
